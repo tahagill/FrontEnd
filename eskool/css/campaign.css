@@ -1,0 +1,35 @@
+.campaign-section {
+  background-color: var(--orange);
+  font-family: "Syne", sans-serif;
+}
+
+.campaign-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--offwhite);
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.campaign-empty-div {
+  border-top: solid var(--offwhite) 1px;
+  width: 20%;
+}
+.campaignBtn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 400px;
+  background-color: transparent;
+  gap: 10px;
+  color: var(--offwhite);
+  border: solid 1px var(--offwhite);
+  display: flex;
+}
+
+.campaign-image {
+  max-height: 590px;
+  overflow: hidden;
+}

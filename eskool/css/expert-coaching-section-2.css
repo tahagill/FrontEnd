@@ -1,0 +1,214 @@
+.new-course-section {
+  height: 500px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Syne", sans-serif;
+  background-color: var(--white);
+  position: relative;
+}
+
+.new-course-container {
+  width: 100%;
+  max-width: 1670px;
+  height: 560px;
+  margin-inline: auto;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  bottom: -40%;
+}
+
+.new-course-container-left {
+  width: 60%;
+}
+
+.new-course-img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.new-course-right {
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--orange);
+  position: relative;
+}
+
+.background-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+}
+
+.expert-coaching-chip {
+  position: absolute;
+  top: 20px !important;
+  left: 20px !important;
+}
+
+.expert-coaching-chip .chip-text {
+  font-size: 20px;
+  font-weight: 400px;
+  color: var(--offwhite) !important;
+}
+
+.expert-coaching-details-container {
+  margin-top: auto;
+}
+
+.expert-coaching-details-container p {
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 30px;
+  color: var(--offwhite);
+}
+
+.expert-coaching-details-container h2 {
+  font-size: 45px;
+  font-weight: 500px;
+  position: relative;
+  z-index: 5;
+}
+
+.new-course-container-right-bottom p {
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 30px;
+  color: var(--offwhite);
+}
+
+.new-course-button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 400px;
+  background-color: transparent;
+  gap: 10px;
+  color: var(--offwhite);
+  border: solid 1px var(--offwhite);
+  margin-top: 20px;
+}
+
+.benefits-section {
+  padding: 300px 40px 40px 40px;
+  background-color: var(--offwhite);
+}
+
+.benefits-container {
+  max-width: 1670px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--offwhite);
+  font-family: "Syne", sans-serif;
+  justify-content: center;
+}
+
+.benefits-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.benefits-01,
+.benefits-02,
+.benefits-03 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.benefits-01-right,
+.benefits-02-right,
+.benefits-03-right {
+  border-left: solid 1px var(--brown);
+  padding: 10px 20px;
+}
+
+.benefits-bottom span {
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 80px;
+}
+
+.benefits-bottom p {
+  color: var(--brown);
+}
+
+@media screen and (max-width: 1720px) {
+  .new-course-section {
+    padding-top: 30px;
+    height: auto;
+  }
+
+  .new-course-container {
+    position: relative;
+    height: auto;
+  }
+
+  .benefits-section {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .expert-coaching-details-container h2 {
+    font-size: 30px;
+  }
+
+  .benefits-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .benefits-container {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  .new-course-img {
+    aspect-ratio: 1/1;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .new-course-section {
+    padding: 20px;
+  }
+
+  .new-course-container {
+    flex-direction: column;
+  }
+
+  .new-course-container-left {
+    max-height: 300px;
+  }
+
+  .new-course-container-left,
+  .new-course-right {
+    width: 100%;
+  }
+
+  .expert-coaching-details-container {
+    margin-top: 100px;
+  }
+}

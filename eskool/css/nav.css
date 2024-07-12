@@ -1,0 +1,125 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 120px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logoContainer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  object-fit: contain;
+}
+
+.logoText {
+  color: var(--offwhite);
+  font-size: 50px;
+}
+
+.navlinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 35px;
+  font-family: var(--poppins);
+  padding-right: 10px;
+  margin-right: 20px;
+}
+
+.navLink {
+  color: var(--offwhite);
+  opacity: 70%;
+  position: relative;
+}
+
+.navLink:hover {
+  color: var(--offwhite);
+  opacity: 100%;
+}
+
+.navLink:hover::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  rotate: 45deg;
+  right: 110%;
+  top: 8px;
+  z-index: 10px;
+  position: absolute;
+  background-color: var(--orange);
+}
+
+.contactBtn {
+  height: 45px;
+  border-radius: 50px;
+  color: var(--offwhite);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  opacity: 70%;
+}
+
+.contactBtn:hover {
+  color: #f9f9f9;
+  opacity: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logoText {
+    font-size: 35px;
+  }
+
+  .navlinksContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .contactBtn {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 20px;
+  }
+
+  .logoText {
+    font-size: 35px;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .contactBtn {
+    font-size: 13px;
+    width: 100%;
+    height: 35px;
+  }
+}

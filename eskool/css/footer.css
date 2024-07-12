@@ -1,0 +1,130 @@
+.footer-section {
+  display: flex;
+  background-color: var(--brown);
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.footer-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+  height: 1px;
+  width: 100%;
+  background: var(--offwhite);
+}
+.footer-container {
+  display: flex;
+  max-width: 1920px;
+  justify-content: space-between;
+  padding: 50px;
+}
+.footer-logo {
+  justify-content: flex-start;
+  display: flex;
+  height: 50px;
+}
+.footer-links {
+  display: flex;
+  gap: 70px;
+  padding-top: 15px;
+}
+.footer-link-name-contact,
+.footer-link-name-courses,
+.footer-link-name-socialmedia {
+  position: relative;
+  font-family: var(--syne);
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 26px;
+  color: var(--offwhite);
+}
+.footer-link-name-contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 120px;
+  background: var(--offwhite);
+  top: -15px;
+}
+.footer-link-name-courses::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 180px;
+  background: var(--offwhite);
+  top: -15px;
+}
+.footer-link-name-socialmedia::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 120px;
+  background: var(--offwhite);
+  top: -15px;
+}
+.footer-links li a {
+  font-family: var(--poppins);
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 26px;
+  color: var(--offwhite);
+}
+.footer-content {
+  display: flex;
+  height: 50px;
+  font-size: 10px;
+  font-family: var(--poppins);
+  color: var(--offwhite);
+  margin-left: 50px;
+}
+
+@media (max-width: 1030px) {
+  .footer-link-name-contact::before {
+    width: 80px;
+  }
+  .footer-link-name-courses::before {
+    width: 100px;
+  }
+  .footer-link-name-socialmedia::before {
+    width: 60px;
+  }
+  .footer-container {
+    gap: 200px;
+  }
+}
+@media (max-width: 950px) {
+  .footer-container {
+    gap: 150px;
+  }
+}
+@media (max-width: 850px) {
+  .footer-container {
+    gap: 100px;
+  }
+
+  .footer-links {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 450px) {
+  .footer-links {
+    flex-direction: column;
+  }
+}

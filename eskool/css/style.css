@@ -1,0 +1,28 @@
+@import "./reset.css";
+@import "./hero.css";
+@import "./nav.css";
+@import "./about.css";
+@import "./services.css";
+@import "./what-we-do.css";
+@import "./coaching.css";
+@import "./event-schedule.css";
+@import "./expert-coaching-4.css";
+@import "./testimonial.css";
+@import "./news-letter.css";
+@import "./campaign.css";
+@import "./footer.css";
+
+.services-chip {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1320px) {
+  .services-chip {
+    top: 0;
+  }
+}

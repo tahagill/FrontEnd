@@ -1,0 +1,128 @@
+.event-schedule-section {
+  display: flex;
+  background-color: var(--offwhite);
+  align-items: end;
+  justify-content: space-between;
+  padding: 10%;
+  position: relative;
+}
+
+.services-chip {
+  display: flex;
+}
+
+.event-items-container {
+  position: relative;
+}
+
+.event-item {
+  display: flex;
+  gap: 90px;
+  border-top: 1.5px solid var(--brown);
+  padding-top: 30px;
+  padding-bottom: 60px;
+  max-width: 1113px;
+}
+
+.event-date-wrapper {
+  display: grid;
+  grid-template-areas:
+    "day month"
+    "day year";
+  column-gap: 10px;
+}
+
+.event-day {
+  grid-area: day;
+  font-family: var(--syne);
+  font-size: 90px;
+  font-weight: 600;
+  color: var(--orange);
+  align-content: center;
+}
+
+.event-month {
+  grid-area: month;
+  align-content: end;
+  font-family: var(--poppins);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.event-year {
+  grid-area: year;
+  font-family: var(--poppins);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.event title {
+  font-family: var(--syne);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+}
+
+.event-text {
+  font-family: var(--poppins);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: var(--brown);
+}
+
+.coaching-button {
+  width: 184px;
+  height: 70px;
+  padding: 20px, 19px, 20px, 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 900px) {
+  .event-schedule-section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: unset;
+  }
+
+  .event-items-container {
+    width: 100%;
+  }
+
+  .event-item {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .event-day {
+    font-size: 70px;
+  }
+
+  .event-text-wrapper {
+    align-items: center;
+  }
+
+  .event-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .event-text {
+    text-align: center;
+    font-size: 15px;
+  }
+}

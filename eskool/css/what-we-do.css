@@ -1,0 +1,146 @@
+.strategies-section {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  background-color: var(--offwhite);
+  container: initial;
+}
+
+.strategies-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--syne);
+  margin-left: 25%;
+}
+
+.strategies-middle,
+.strategy-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 20px;
+}
+
+.strategy-list {
+  padding: 0;
+  counter-reset: muffins;
+}
+
+.strategy {
+  counter-increment: muffins;
+  position: relative;
+}
+
+.strategy:before {
+  content: "0" counter(muffins);
+  color: var(--gray);
+  font-size: 30px;
+  font-weight: 500;
+  font-family: var(--poppins);
+  position: absolute;
+  right: 110%;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+}
+
+.strategy-cta-btn {
+  padding: 10px 20px;
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 400px;
+  border-radius: 30px;
+  border: solid 1px var(--black);
+}
+
+.strategies-right {
+  height: inherit;
+  width: 550px;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+}
+
+.strategies-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.performence-01-section {
+  background-color: var(--orange);
+  font-family: "Syne", sans-serif;
+}
+
+.performence-01-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--offwhite);
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.performence-01-empty-div {
+  border-top: solid var(--offwhite) 1px;
+  width: 20%;
+}
+.performence-button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 400px;
+  background-color: transparent;
+  gap: 10px;
+  color: var(--offwhite);
+  border: solid 1px var(--offwhite);
+  display: flex;
+}
+
+@media screen and (max-width: 1320px) {
+  .strategies-section {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 30px;
+  }
+
+  .strategies-right {
+    position: unset;
+  }
+
+  .strategies-container {
+    margin: unset;
+  }
+
+  .strategy:before {
+    right: 105%;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .strategies-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .strategies-right {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .strategy:before {
+    font-size: 24px;
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .strategy br {
+    display: none;
+  }
+}
