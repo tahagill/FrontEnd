@@ -1,0 +1,115 @@
+/* navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoWrapper {
+  width: 50px;
+}
+
+.logo {
+  width: 100%;
+  object-fit: contain;
+}
+
+.logoText {
+  font-size: 32px;
+}
+
+.navlinks {
+  width: 35%;
+  gap: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlink {
+  font-size: 18px;
+  color: #495263;
+}
+
+.logins {
+  display: flex;
+  justify-content: center;
+}
+
+.loginBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.loginButton {
+  width: 152px;
+  height: 56px;
+  margin-top: 10px;
+  border-radius: 34px;
+  background-color: #864bd8;
+  color: white;
+}
+
+@media screen and (max-width: 840px) {
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navlinks {
+    width: unset;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logoText {
+    font-size: 24px;
+  }
+
+  .logoWrapper {
+    width: 30px;
+  }
+
+  .navlink {
+    font-size: 15px;
+  }
+
+  .navlinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logoText {
+    font-size: 24px;
+  }
+
+  .navlink {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .logins {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  button {
+    padding: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navlinks {
+    gap: 10px;
+  }
+}

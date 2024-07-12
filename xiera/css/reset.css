@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  padding: 16px;
+  border: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+
+  color: #495263;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btnPrimary {
+  background-color: transparent;
+}
+
+.btnSecondary {
+  color: white;
+  background-color: #864bd8;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  border: 1px solid lightslategray;
+}

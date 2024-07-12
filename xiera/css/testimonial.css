@@ -1,0 +1,111 @@
+.testimonial-section {
+  margin-block: 200px;
+  padding: 20px;
+}
+
+.testimonial-section-image {
+  min-width: 50%;
+  max-width: 415px;
+  display: grid;
+  place-items: center;
+}
+
+.testimonial-section-image img{
+  width: 100%;
+}
+
+.testimonial-sub-title {
+    color: #0d8772;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .testimonial-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+ .testimonial-card-section {
+  max-width: 1050px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 100px;
+ }
+
+
+ .description-card{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+ }
+
+ .name{
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  
+ }
+
+ .job-title{
+  font-family: "Inter", sans-serif;
+  color: #6f6f75;
+  font-size: 14px;
+ }
+
+ .testimony{
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  color: #6f6f75;
+  font-size: 20px;  
+ }
+
+
+
+ .vectors {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+ }
+
+
+
+ @media screen and (max-width:768px){
+  .testimonial-title {
+    font-size: 26px;
+  }
+  .description-card{
+    font-size: 20px;
+    margin: auto;
+  }
+  .testimonial-card-section {
+    flex-direction: column;
+    align-items: center;    
+    gap: 20px;
+  }
+ }
+
+
+@media (max-width: 425px) {
+  .description-card{
+    align-items: center;
+  }
+  
+  .testimony{
+    font-size: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,79 @@
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pricing >.group1{
+    width: 100%;
+    max-width: 672px;
+    height: auto;
+}
+.pricing >.group1 >img{
+    max-width: 100%;
+    height: auto;
+
+}
+.pricing > .group2{
+    width: 100%;
+    max-width: 292px;
+    height: auto;
+    margin-left: 20px;
+    text-align: left;
+    padding: 20px;
+    gap: 10px;
+}
+.pricing > .group2 > h3{
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFB200;
+    letter-spacing: 0.17em;
+    font-weight: bold;
+    font-family: "Poppins" , sans-serif;
+    padding-bottom: 15px;
+}
+.pricing > .group2 > h1{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    font-family: "Inter" , sans-serif;
+    padding-bottom: 15px;
+}
+.group2 > p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+    font-family: "Inter" , sans-serif;
+}
+.group2 > button {
+    font-weight: bold;
+    font-size: 14.25px;
+    line-height: 18.88px;
+    width: 100%;
+    max-width: 289px;
+    height: auto;
+    border-radius: 19.79px;
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: 0px 39.58904266357422px 60.17534255981445px -19.79452133178711px #0000000F;
+    margin-top: 20px;
+}
+.group2 > button > #middle{
+    width: 26.13px;
+    border: 0.95px;
+    color: #E3E3E3;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "Poppins" , sans-serif;
+}
+.group2 > button > #month{
+    font-weight: bold;
+    color: #292E37;
+}
+.group2 > button > #year{
+    font-weight: bold;
+    color: #864BD8;
+    border-bottom: 2px solid #864BD8;
+}

@@ -1,0 +1,115 @@
+.NewsLetter-Section {
+    max-width: 1170px;
+    margin-inline: auto;
+    padding: 20px;
+    margin-block: 200px;
+   
+  }
+
+  .newsletter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 60px;
+
+    position: relative;
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(/images/newsletter-backgorund-image.png);
+  }
+
+
+  .newsletter-form {
+    width: 100%;
+    max-width: 502px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.newsletter-input {
+    width: 100%;    
+    height: 68px;
+    border: none;
+    border-radius: 50px;
+    padding-inline: 30px;
+}
+
+.newsletter-input:focus {
+   outline: none;
+}
+
+.newsletter-input::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color:  #A3A2A8;
+}
+
+.Newsletter-button {
+    background-color: #FFB200;
+    color: #FFFFFF;
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    width: 139px;
+    height: 68px;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+}
+
+
+.newsletter-sub-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #BC95F2;
+}
+
+.newsletter-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color:  #FFFFFF;
+}
+
+.polygon {
+    position: absolute;
+    top: 20%;
+}
+
+.pLeft {
+    left: 40px;
+    top: 50%;
+}
+
+.pRight {
+    right: 35px;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .newsletter-title {
+      font-size: 26px;
+    }
+   }
+  
+  
+  @media (max-width: 425px) {
+    .newsletter-title {
+        font-size: 16px;
+      }
+  }
+
+
+
+
+  
